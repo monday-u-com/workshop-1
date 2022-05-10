@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body></body>
+    <head>
+        <title>Workshop 01</title>
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">An amazing form</h1>
+            <form class="main_content">
+                <input name="full_name" placeholder="Full Name" type="text" required/>
+                <input name="username" placeholder="User Name" type="text" maxlength="6"  pattern="[^' ']+" required/>
+                <input name="password" placeholder="Password" type="password" minlength="8" required/>
+                <input name="age" placeholder="Age" type="number" required/>
+                <input name="email" placeholder="Email" type="email" required/>
+                <select name="gander" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="refuse">refuse to state</option>
+                </select>
+                <input name="condition_and_terms" id="terms_checkbox" type="checkbox" required/>
+                <label for="terms_checkbox">
+                    Condition and terms
+                </label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
 </html>
